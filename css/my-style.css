@@ -1,0 +1,128 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  	background: linear-gradient(to left,  black 0%, #2B2927 100%);
+
+}
+
+.navbar-logo{
+	width: 40%;
+	margin: -13.5% 0;
+}
+
+.logo-footer{
+	width: 45%;
+	margin: -9% 0;
+}
+
+.service-img{
+	display: block;
+	width: 100%;
+	height: 60vh;
+	padding: 0;
+	margin: 2em auto;
+}
+
+.contact-img{
+	width: 100%;
+	margin: 2em 1em;
+}
+
+nav{
+	width: 100vw;
+}
+
+#plans{
+	width: 100vw;
+	max-width: 100vw;
+}
+
+
+.portfolio-img{
+	height: 70vh;
+}
+
+.option-plan{
+	cursor: pointer;
+	width: 20px;
+	height: 50vh;
+}
+
+.selected-option{
+	background-color: blue;
+	color: white;
+}
+
+.center-button{
+	display: block;
+	margin: 2em auto;
+}
+
+.html-video{
+  position: relative;
+  display: block;
+  top: 7em;
+  width: 90%;
+  height: 75vh;
+  margin: 5vh auto;
+  padding: 1em auto;
+    /*max-width: 100%;*/
+}
+.cover-image{
+  width: 50vw;
+  height: 70vh;
+}
+
+video {
+	position: relative;
+	top: 1.7em;
+	min-width: 90%; 
+	min-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: 1.5em;
+	margin-left: 0;
+	/*z-index: -10;*/
+	object-fit: fill;
+}
+
+.video-content {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 30em;
+  background: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  padding: 20px;
+}
+
+.coloring{
+	height: 1vh;
+	background: #00987A;
+}
+
+.white{
+	color: white;
+}
+
+@media (max-width: 705.98px) {
+	.video-content h4 {
+		display: none;
+	}
+
+	.video-content{
+		top: 80vh;
+	}
+ 	.cover-image{
+	  width: 100%;
+	  height: 70vh;
+	}
+	.navbar-light .navbar-toggler-icon{
+		background-image: url('../img/menu.svg') !important;
+	}
+	.feature-box{
+		margin-bottom: 1em;
+	 }
+}
