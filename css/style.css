@@ -867,7 +867,7 @@ padding-top: 12%;
 
 /* CONTACT PAGE */
 
-.contact .contact__form button 
+.contact .contact__form button, .modal-content button
 {
   width: 200px;
   margin: 0 auto;

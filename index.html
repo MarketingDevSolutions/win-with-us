@@ -34,6 +34,16 @@
     </a>
   </nav>
 
+  <div id="myModal" class="my-modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-text" class="text-center"></p>
+            <button class="btn button-style" type="submit" onclick="closeModal()">
+                <i class="fa fa-paper-plane-o" ></i> ACCEPT</button>        
+            </div>
+    </div>
+
     <main class="main">
     
         <section class="row page-title">
@@ -51,53 +61,48 @@
 
         <section id="contact" class="contact container">
 
-                <form class="contact__form">
+                <div class="contact__form">
                     <!-- Element of the ajax contact form -->
                         <h3>Please, answer the following questions:</h3>
                         <div class="row">
                             <div class="col-12 form-group">
                                 <label for="answer1">1.- Tell us about your business! What product or service do you offer?</label>
-                                <textarea name="answer1" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
+                                <textarea name="answer1" id="answer1Form" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
                             </div>
                             <div class="col-12 form-group">
                                 <label for="answer2">2.- What is your market? Tell us about your customers!</label>
-                                <textarea name="answer2" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
+                                <textarea name="answer2" id="answer2Form" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
                             </div>
                             <div class="col-12 form-group">
                                 <label for="answer3">3.- How do you monetize?</label>
-                                <textarea name="answer3" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
+                                <textarea name="answer3" id="answer3Form" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
                             </div>
                             <div class="col-12 form-group">
                                 <label for="answer4">4.- Do you have allies? Who and how do they benefit you?</label>
-                                <textarea name="answer4" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
+                                <textarea name="answer4" id="answer4Form" class="form-control" rows="3" placeholder="Your answer..." required></textarea>
                             </div>
                         </div>
                         <h3>Now, fill your personal info:</h3>
                         <div class="row">
                             <div class="col-12 form-group">
                                 <label for="name">Name</label>
-                                <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                <input name="name" id="nameForm" type="text" class="form-control" placeholder="Name" required>
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="email">Email</label>
-                                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                <input name="email" id="emailForm" type="email" class="form-control" placeholder="Email" required>
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="phone">Phone number</label>
-                                <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                <input name="phone" id="phoneForm" type="text" class="form-control" placeholder="Phone" required>
                             </div>
-                            <button class="btn button-style" type="submit"><i class="fa fa-paper-plane-o" onclick="{console.log('hey');}"></i> SEND SUBMISSION</button>
+                            <button class="btn button-style" type="submit" onclick="sendSubmission()">
+                                <i class="fa fa-paper-plane-o"></i> 
+                                SEND SUBMISSION
+                            </button>
                         </div>
                 
-                    </form>
-                <!-- Starting of successful form message -->
-                    <div class="alert-msj col-12">
-                        <div class="alert alert-success contact__msg" style="display: none;" role="alert">
-                            Your message was sent successfully.
-                        </div>
                     </div>
-                
-
             <div class="borderbottom6"></div>
 
 
@@ -105,6 +110,8 @@
 
     
     </main>
+
+
 
     <footer class="text-center pos-re">
         <div class="container">
@@ -131,5 +138,8 @@
     </footer>
 
 </body>
+
+<script src="./js/submission.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>
