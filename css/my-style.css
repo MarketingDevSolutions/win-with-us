@@ -5,6 +5,11 @@ html, body {
 
 }
 
+.flyer-img{
+	width: 540px;
+	height: 661.5px;
+}
+
 .navbar-logo{
 	width: 40%;
 	margin: -13.5% 0;
@@ -157,6 +162,11 @@ video {
 
 
 @media (max-width: 705.98px) {
+	.flyer-img {
+    width: 270px;
+    height: 330.75px;
+}
+
 	.video-content h4 {
 		display: none;
 	}
